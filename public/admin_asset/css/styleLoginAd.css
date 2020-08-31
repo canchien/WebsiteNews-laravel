@@ -1,0 +1,85 @@
+.background-img{
+    background-image: url("../img/bgr.jpg");
+
+    background-size: 100%;
+}
+.login{
+	width: 400px;
+	margin: 100px auto;
+	font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.login-header {
+  background: teal;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.w3l_grid {
+  background: #fff;
+  padding:25px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+
+
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  margin: 25px 0px;
+  color:#ccc6c6;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  padding: 13px;
+  outline:none;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #28a745;
+}
+.login input[type="email"]:hover
+.login input[type="password"]:hover
+{
+ border-color:#28a745;
+
+}
+
+.login input[type="submit"]:hover {
+  background: #28a745;
+}
+.login-container input[type="submit"] {
+    width: 100%;
+    background:#ef4d4d;
+    color: white;
+    padding: 12px 20px;
+
+    border: none;
+	font-size:14px;
+	letter-spacing:1px;
+    cursor: pointer;
+	outline:none;
+	transition: .5s ease-in;
+    -webkit-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -moz-transition:.5s ease-in;
+}
+

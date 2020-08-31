@@ -1,0 +1,117 @@
+body{
+	background-color:#FFF;
+    font-family: "Lato", sans-serif;
+	font-size:16px;
+	line-height:18px;
+	color:#777;
+}
+
+a, a:hover, a:focus{
+	text-decoration: none;
+	outline: 0;
+}
+h1, h2, h3,
+h4, h5, h6 {
+    color: #333;
+	margin:0;
+    font-weight: normal;
+}
+
+h1 { font-size: 28px;}
+h2 { font-size: 24px;}
+h3 { font-size: 18px;}
+h5 { font-size: 16px;}
+h6 { font-size: 14px;}
+
+.syntaxhighlighter {
+    border: 1px solid #efefef;
+    max-height: 100% !important;
+    padding: 20px 0;
+}
+
+.main-content{
+  margin: 0 5%;
+}
+
+.left-sidebar {
+    background-color: teal;
+    float: left;
+    min-height: 100%;
+    position: fixed;
+    width: 15%;
+}
+
+.logo {
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+.logo h1{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.left-nav ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.left-nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px 35px;
+    -webkit-transition: all 0.3s ease-in 0s;
+       -moz-transition: all 0.3s ease-in 0s;
+        -ms-transition: all 0.3s ease-in 0s;
+         -o-transition: all 0.3s ease-in 0s;
+            transition: all 0.3s ease-in 0s;
+}
+
+.left-nav ul li a:hover, .left-nav ul li .current {
+    background-color: #fff;
+    color: #000;
+}
+
+#main-wrapper {
+    float: left;
+    margin-left: 18%;
+    width: 82%;
+}
+
+.content-header {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+    padding: 30px 0 35px;
+    text-align: center;
+}
+
+
+#nav .nav-slt{
+    margin-left: 20px;
+}
+
+#nav .sub-icon::after{
+    content: '\203A';
+    float: right;
+    transform: rotate(180deg);
+}
+#nav .dropdown:hover .sub-icon::after{
+    transform: rotate(90deg);
+}
+
+.content-body td a{
+    color: #333;
+    margin-left: 10px;
+}
+
+.content-body .action{
+    width: 10%;
+}
+
+.dashboard-body{
+    width: 33%;
+    margin: 3em 27em;
+}
+
