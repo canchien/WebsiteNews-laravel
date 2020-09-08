@@ -7,6 +7,12 @@
     <div class="container">
         <div class="latest-wrapper">
             <!-- section Tittle -->
+            <?php
+                function textColor($str,$keyWord)
+                {
+                    return str_replace($keyWord,"<i style='color: red;'>$keyWord</i>",$str);
+                }
+            ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-tittle mb-30">
@@ -24,10 +30,10 @@
                                     <img src="upload/image/{{$new->image}}" alt="">
                                 </div>
                                 <div class="search-caption">
-                                    <h4><a href="detailsNew/{{$new->id}}" style="font-size: 25px">{{$new->title}}</a></h4>
+                                    <h4><a href="detailsNew/{{$new->id}}" style="font-size: 25px">{!! textColor($new->title,$keyWord) !!}</a></h4>
                                     <span class="color{{rand(1,3)}}">{{$new->category->name}}</span>
                                     <p>{{$new->created_at}}</p>
-                                    <h5><small>{{$new->summery}}</small></h5>
+                                    <h5><small>{!! textColor($new->summery,$keyWord) !!}</small></h5>
                                 </div>
                             </div>
 

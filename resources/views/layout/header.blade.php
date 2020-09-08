@@ -45,7 +45,7 @@
         <div class="search-box">
             <form action="search" method="GET">
                 <input type="hidden" name="_tokken" value="{{ csrf_token() }}">
-                <input type="text" placeholder=" Search" name="keyWord">
+                <input type="text" placeholder=" Search" name="keyWord" required>
                 <button type="submit"><i class="fas fa-search special-tag"></i></button>
             </form>
         </div>
