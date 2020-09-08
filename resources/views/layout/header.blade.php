@@ -43,9 +43,10 @@
             <marquee >Chúc bạn ngày mới tốt lành.</marquee>
         </div>
         <div class="search-box">
-            <form action="#">
-                <input type="text" placeholder=" Search" >
-                <i class="fas fa-search special-tag"></i>
+            <form action="search" method="GET">
+                <input type="hidden" name="_tokken" value="{{ csrf_token() }}">
+                <input type="text" placeholder=" Search" name="keyWord">
+                <button type="submit"><i class="fas fa-search special-tag"></i></button>
             </form>
         </div>
     </div>

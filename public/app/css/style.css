@@ -140,7 +140,11 @@ p{
     padding: 10px;
     width: 30%;
 }
-
+.search-box button{
+    background-color: white;
+    border: none;
+    outline: none;
+}
 
 /* content */
 
@@ -217,7 +221,8 @@ span {
     display: inline-block;
 }
 
-.trending-bottom .single-bottom .trend-bottom-cap h4 a, .latest-single .latest-caption h4 a{
+.trending-bottom .single-bottom .trend-bottom-cap h4 a,
+.latest-single .latest-caption h4 a, .search-caption h4 a{
     color: #000;
     font-weight: 700;
     text-decoration: none;
@@ -228,7 +233,8 @@ span {
 .trand-right-single .trand-right-cap h4 a:hover,
 .single-what-news .what-cap h4 a:hover,
 .latest-single .latest-caption h4 a:hover,
-.relate-right-single .relate-right-cap h4 a:hover{
+.relate-right-single .relate-right-cap h4 a:hover,
+.search-caption h4 a:hover{
     color: rgb(231, 56, 56);
 }
 .trend-bottom-img img, .trend-top-img img{
@@ -384,7 +390,7 @@ span {
     width: 100%;
 }
 .latest-single .latest-img img{
-    width: 100%;
+    width: 220px;
     height: 200px;
     border-radius: 6px;
 }
@@ -599,6 +605,12 @@ span {
     margin-bottom: 50px;
     border-bottom: 0;
 }
+/* search */
+.search-caption{
+    padding-left: 30px;
+}
+
+
 /* paginate */
 
 .page-link{

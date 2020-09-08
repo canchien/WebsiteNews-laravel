@@ -52,4 +52,11 @@ class PagesController extends Controller
         $relatedNews= News::where([['idcategory',$detailsNew->idcategory],['id','<>',$id]])->inRandomOrder()->take(4)->get();
         return view('pages.details',['detailsNew'=>$detailsNew,'relatedNews'=>$relatedNews,'comments'=>$comments]);
     }
+
+    function getSearch(Request $request)
+    {
+        $keyWord = $request->keyWord;
+        $news = News::where("title","like","%$keyWord%")->orWhere("summery","like","%$keyWord%")->paginate(6);
+        return view('pages.search',['news'=>$news,'keyWord'=>$keyWord]);
+    }
 }

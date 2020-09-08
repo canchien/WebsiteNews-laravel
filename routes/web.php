@@ -20,6 +20,9 @@ use Illuminate\Support\Arr;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('search', function () {
+    return view('pages.search');
+});
 
 // admin login and logout
 Route::get('admin/login','UserController@getLogin');
@@ -84,3 +87,6 @@ Route::get('detailsNew/{id}','PagesController@detailsNew');
 
 //send comment
 Route::post('sendComment/{id}','CommentController@addComment');
+
+//search
+Route::get('search','PagesController@getSearch');
