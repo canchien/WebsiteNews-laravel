@@ -26,7 +26,7 @@
                     <div class="latest-news-active d-flex row">
 
                             <div class="latest-single mb-30 d-flex">
-                                <div class="latest-img" >
+                                <div class="latest-img col-lg-4" >
                                     <img src="upload/image/{{$new->image}}" alt="">
                                 </div>
                                 <div class="search-caption">

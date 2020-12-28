@@ -7,6 +7,7 @@
                 <div class="content-header">
                     <h1>Load...</h1>
                 </div>
+                
                 <div class="content-body dashboard-body">
                     <div class="spinner-border text-muted"></div>
                     <div class="spinner-border text-primary"></div>

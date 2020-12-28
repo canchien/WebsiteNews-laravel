@@ -48,7 +48,7 @@ class PagesController extends Controller
     function detailsNew($id)
     {
         $detailsNew= News::find($id);
-        $comments = Comment::where('idnews',$id)->orderBy('created_at','desc')->get();
+        $comments = Comment::where('post_id',$id)->orderBy('created_at','desc')->get();
         $relatedNews= News::where([['idcategory',$detailsNew->idcategory],['id','<>',$id]])->inRandomOrder()->take(4)->get();
         return view('pages.details',['detailsNew'=>$detailsNew,'relatedNews'=>$relatedNews,'comments'=>$comments]);
     }

@@ -48,7 +48,7 @@
                 @if (Auth::check())
                     <li class="dropdown">
                         <a data-toggle="collapse" data-target="#nav-info" href="#">
-                            <img src="https://cdn2.iconfinder.com/data/icons/business-management-52/96/Artboard_20-512.png" alt="avatar" width="20px" height="20px"> {{Auth::user()->name}}
+                            <img src="{{ Avatar::create(Auth::user()->name)->toBase64() }}" alt="avatar" width="20px" height="20px"> {{Auth::user()->name}}
                             <span class="sub-icon"></span>
                         </a>
                         <div id="nav-info" class="collapse">

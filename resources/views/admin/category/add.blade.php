@@ -22,8 +22,8 @@
                         {{session('message')}}
                 </div>
                 @endif
-                <form action="admin/category/add" method="POST">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                <form action="" method="POST">
+                    @csrf
                     <div class="form-group">
                     <label for="name"><h3>Tên thể loại</h3></label>
                     <input type="text" class="form-control" name="name" placeholder="Nhập tên thể loại">

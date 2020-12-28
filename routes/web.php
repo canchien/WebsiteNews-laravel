@@ -3,6 +3,7 @@
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Models\News;
+use App\Models\Category;
 use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Arr;
 
@@ -23,9 +24,13 @@ Route::get('/', function () {
 Route::get('search', function () {
     return view('pages.search');
 });
-
+Route::get('show', function () {
+    $posts = Category::find(1)->news->toArray();
+    echo "<pre>";
+    var_dump($posts);
+});
 // admin login and logout
-Route::get('admin/login','UserController@getLogin');
+Route::get('admin/login','UserController@getLogin')->name('login');
 Route::post('admin/login','UserController@postLogin');
 Route::get('admin/logout','UserController@getLogout');
 
@@ -34,6 +39,7 @@ Route::group(['prefix' => 'admin','middleware'=>'adminLogin'], function () {
     Route::get('home', function () {
         return view('admin.layout.dashboard');
     });
+    Route::get('test','CategoryController@test');
     Route::group(['prefix' => 'category'], function () {
         Route::get('list','CategoryController@getList');
 

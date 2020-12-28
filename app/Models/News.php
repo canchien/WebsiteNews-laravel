@@ -14,8 +14,8 @@ class News extends Model
         return $this->belongsTo('App\Models\Category','idcategory','id');
     }
 
-    public function commnet()
+    public function commnets()
     {
-        return $this->hasMany('App\Models\Comment','idnews','id');
+        return $this->hasMany('App\Models\Comment','post_id','id');
     }
 }

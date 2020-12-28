@@ -7,12 +7,8 @@
     <base href="{{asset('')}}">
     <!-- css -->
     <link rel="stylesheet" href="app/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="{{asset('app/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('app/css/font-awesome.min.css')}}">
-
-
-
 </head>
 <body>
     @include('layout.header')

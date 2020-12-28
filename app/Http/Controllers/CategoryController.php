@@ -19,7 +19,7 @@ class CategoryController extends Controller
     {
         return view('admin.category.add');
     }
-
+    
     public function checkValidate(Request $request)
     {
 
