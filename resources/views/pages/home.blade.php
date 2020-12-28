@@ -169,7 +169,7 @@
                     <div class="single-box">
                         <div class="follow-us d-flex align-items-center">
                             <div class="follow-social">
-                                <a href="https://www.facebook.com/chienhihe"><img src="app/img/icon-fb.png" alt=""></a>
+                                <a href="https://www.facebook.com/chienhihe"><img src="frontend/img/icon-fb.png" alt=""></a>
                             </div>
                             <div class="follow-count">
                                 <span>8,045</span>
@@ -178,7 +178,7 @@
                         </div>
                         <div class="follow-us d-flex align-items-center">
                             <div class="follow-social">
-                                <a href="#"><img src="app/img/icon-tw.png" alt=""></a>
+                                <a href="#"><img src="frontend/img/icon-tw.png" alt=""></a>
                             </div>
                             <div class="follow-count">
                                 <span>8,045</span>
@@ -187,7 +187,7 @@
                         </div>
                             <div class="follow-us d-flex align-items-center">
                             <div class="follow-social">
-                                <a href="#"><img src="app/img/icon-ins.png" alt=""></a>
+                                <a href="#"><img src="frontend/img/icon-ins.png" alt=""></a>
                             </div>
                             <div class="follow-count">
                                 <span>8,045</span>
@@ -196,7 +196,7 @@
                         </div>
                         <div class="follow-us d-flex align-items-center">
                             <div class="follow-social">
-                                <a href="#"><img src="app/img/icon-yo.png" alt=""></a>
+                                <a href="#"><img src="frontend/img/icon-yo.png" alt=""></a>
                             </div>
                             <div class="follow-count">
                                 <span>8,045</span>
